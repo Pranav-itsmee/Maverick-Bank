@@ -1,0 +1,133 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.withdrawals-page {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #212529;
+    color: #ffffff;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-brand {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu-item {
+    display: block;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-menu-item:hover {
+    background: #0d6efd;
+    transform: translateX(5px);
+    border-radius: 5px;
+}
+
+.sidebar-menu-item.active {
+    background: #0d6efd;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.profile-dropdown img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.filter-container {
+    margin-bottom: 30px;
+}
+
+.btn-export {
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-export:hover {
+    background-color: #138496;
+}
+
+.withdrawal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.withdrawal-table th, .withdrawal-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.withdrawal-table th {
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.withdrawal-table tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.status-badge {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.bg-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}

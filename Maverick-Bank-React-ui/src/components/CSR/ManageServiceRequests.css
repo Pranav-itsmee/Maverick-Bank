@@ -1,0 +1,169 @@
+/* ManageServiceRequests.css */
+.manage-service-requests-container {
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sidebar {
+    background-color: #212529;
+    color: white;
+    width: 250px;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar-brand {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu-item {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-menu-item:hover,
+.sidebar-menu-item.active {
+    background-color: #0d6efd;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.service-requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.service-requests-table th,
+.service-requests-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.service-requests-table th {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.service-requests-table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.status-badge.pending {
+    background-color: #ffc107; /* Yellow for pending */
+    color: white;
+}
+
+.status-badge.resolved {
+    background-color: #28a745; /* Green for resolved */
+    color: white;
+}
+
+.status-badge.in{
+    background-color: #17a2b8; /* Blue for in-progress */
+    color: white;
+}
+
+.status-badge.account {
+    background-color: #0d6efd; /* Primary blue for account */
+    color: white;
+}
+
+.status-badge.loan {
+    background-color: #17a2b8; /* Teal blue for loan */
+    color: white;
+}
+
+.status-badge.technical {
+    background-color: #dc3545; /* Red for technical issues */
+    color: white;
+}
+
+.status-badge.other {
+    background-color: #6c757d; /* Gray for other types */
+    color: white;
+}
+
+.status-badge.new {
+    background-color: #007bff; /* Blue for new requests */
+    color: white;
+}
+
+.status-badge.approved {
+    background-color: #28a745; /* Green for approved */
+    color: white;
+}
+
+.status-badge.rejected {
+    background-color: #dc3545; /* Red for rejected */
+    color: white;
+}
+
+.status-badge.under-review {
+    background-color: #ff851b; /* Orange for under review */
+    color: white;
+}
+
+.status-badge.in-progress {
+    background-color: #17a2b8; /* Cyan for in-progress */
+    color: white;
+}
+
+.status-badge.pending-approval {
+    background-color: #ffc107; /* Yellow for pending approval */
+    color: white;
+}
+
+
+/* Ensure uniform table appearance, keeping it simple */
+.service-requests-table td {
+    color: #495057;  /* Default text color */
+}
+
+.service-requests-table td:hover {
+    background-color: #e9ecef; /* Light hover effect */
+}

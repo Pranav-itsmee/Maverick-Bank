@@ -1,0 +1,121 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Styling */
+.bman-transaction-sidebar {
+    background: #212529;
+    color: #ffffff;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.bman-transaction-sidebar-brand {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.bman-transaction-sidebar-menu-item {
+    display: block;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.bman-transaction-sidebar-menu-item:hover {
+    background: #0d6efd;
+    transform: translateX(5px);
+    border-radius: 5px;
+}
+
+.bman-transaction-sidebar-menu-item.active {
+    background: #0d6efd;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+.bman-transaction-main-content {
+    margin-left: 250px;
+    padding: 40px 20px;
+    max-width: calc(100% - 250px);
+}
+
+.bman-transaction-header-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.details-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.details-row span {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.status-badge {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.bg-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.bg-info {
+    background-color: #17a2b8;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .bman-transaction-main-content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}

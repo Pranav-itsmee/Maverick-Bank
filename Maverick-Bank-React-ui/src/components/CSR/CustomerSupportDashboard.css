@@ -1,0 +1,135 @@
+.customerdashboard-container {
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;                /* Take full viewport height */
+  overflow: hidden;             /* Prevent scroll */
+  display: flex;
+  flex-direction: column;
+}
+
+.customerdashboard-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customerdashboard-container .header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.customerdashboard-container .profile-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.customerdashboard-container .profile-dropdown img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.customerdashboard-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.customerdashboard-container .dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.customerdashboard-container .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.customerdashboard-container .show {
+  display: block;
+}
+
+.customerdashboard-container .main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:  20px 50px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.customerdashboard-container .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.customerdashboard-container .dashboard-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.customerdashboard-container .dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.customerdashboard-container .dashboard-card h5 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.customerdashboard-container .dashboard-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.customerdashboard-container .dashboard-card .btn {
+  font-size: 16px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.welcome-section {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.welcome-section h2 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+.welcome-section p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+

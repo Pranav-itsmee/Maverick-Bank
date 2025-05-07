@@ -1,0 +1,148 @@
+/* Main container with sidebar and content */
+.view-accounts-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 240px;
+    background-color: #1a1a1a;
+    padding-top: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .sidebar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-menu-item {
+    padding: 12px 24px;
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .sidebar-menu-item:hover,
+  .sidebar-menu-item.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Main content beside sidebar */
+  .main-content {
+    margin-left: 240px;
+    padding: 30px;
+    width: calc(100% - 240px);
+    overflow-y: auto;
+  }
+  
+  /* Header with profile */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .profile-dropdown {
+    position: relative;
+  }
+  
+  .profile-dropdown img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown hidden unless hovered */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 55px;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+  }
+  
+  .profile-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Filter input */
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Table */
+  .table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+  }
+  
+  .customer-table th,
+  .customer-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+  
+  .customer-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .customer-table tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  

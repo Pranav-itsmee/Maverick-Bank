@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.edit-emp-container {
+  display: flex;
+  height: 100vh;
+}
+
+.edit-emp-sidebar {
+  width: 250px;
+  background-color: #212529;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.edit-emp-sidebar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #0d6efd;
+}
+
+.edit-emp-sidebar-menu-item {
+  padding: 15px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.edit-emp-sidebar-menu-item:hover {
+  background-color: #0d6efd;
+  transform: translateX(5px);
+  border-radius: 5px;
+}
+
+.edit-emp-sidebar-menu-item.active {
+  background-color: #0d6efd;
+}
+
+.edit-emp-main-content {
+  flex-grow: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+}
+
+.edit-emp-main-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.edit-emp-form-section {
+  margin-bottom: 20px;
+}
+
+.edit-emp-form-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.edit-emp-form-section select,
+.edit-emp-form-section input[type="text"],
+.edit-emp-form-section input[type="email"],
+.edit-emp-form-section input[type="date"],
+.edit-emp-form-section input[type="file"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.edit-emp-form-section select:focus,
+.edit-emp-form-section input:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+.edit-emp-update-btn {
+  background-color: #0d6efd;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.edit-emp-update-btn:hover {
+  background-color: #0a58ca;
+}
+
+.edit-emp-form-section input:disabled {
+  background-color: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .edit-emp-sidebar {
+    width: 200px;
+  }
+
+  .edit-emp-main-content {
+    padding: 20px;
+  }
+
+  .edit-emp-form-section label {
+    font-size: 14px;
+  }
+
+  .edit-emp-form-section input,
+  .edit-emp-form-section select {
+    font-size: 14px;
+  }
+}

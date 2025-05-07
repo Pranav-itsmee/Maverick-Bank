@@ -1,0 +1,66 @@
+.login-page {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.brand-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.brand-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.btn-primary {
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.error-msg {
+    color: red;
+    text-align: left;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,151 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background: #212529;
+    color: #ffffff;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-brand {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu-item {
+    display: block;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar-menu-item:hover {
+    background: #0d6efd;
+    transform: translateX(5px);
+    border-radius: 5px;
+}
+
+.sidebar-menu-item.active {
+    background: #0d6efd;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+    padding-bottom: 50px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.profile-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-dropdown img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: #f8f9fa;
+}
+
+.details-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.details-row span {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+.status-badge {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.bg-success {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.bg-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.bg-warning {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.bg-info {
+    background-color: #17a2b8;
+    color: #ffffff;
+}
