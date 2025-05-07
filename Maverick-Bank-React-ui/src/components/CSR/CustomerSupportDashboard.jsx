@@ -40,11 +40,7 @@ const CustomerSupportDashboard = () => {
         <div className="header-title">Customer Support Dashboard</div>
         <div className="profile-dropdown" onClick={toggleDropdown}>
           <img src="https://via.placeholder.com/50" alt="Profile" />
-          <div className={`dropdown-content ${dropdownOpen ? 'show' : ''}`}>
-            <Link to="#"><i className="fas fa-user me-2"></i> Profile</Link>
-            <Link to="#"><i className="fas fa-cog me-2"></i> Settings</Link>
-            <Link to="#"><i className="fas fa-sign-out-alt me-2"></i> Logout</Link>
-          </div>
+          
         </div>
       </div>
 
